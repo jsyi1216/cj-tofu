@@ -1,0 +1,10 @@
+.custom-file-label:after{
+  content: "Upload";
+}
+.custom-field{
+  width: 400px;
+}
+.custom-img{
+  width: 400px;
+  height: 400px;
+}
