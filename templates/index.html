@@ -11,8 +11,8 @@
         </div>
         <section class="text-center">
             <div class="container">
-                <h1>두부 인식 데모</h1>
-                <p class="lead text-muted">진천공장 두부 생산라인에서 불량두부를 인식하는 데모 페이지입니다.</p>
+                <h1>균주 오염 여부 판별 데모</h1>
+                <p class="lead text-muted">Kerteh 공장에서 생산되는 균주의 오염 여부를 판별하는 데모 페이지입니다.</p>
             </div>
         </section>
         <div class="album py-5 bg-light">
@@ -21,10 +21,10 @@
                     <div class="col-md-4"></div>
                     {% if path %}
                     <div class="col-md-4">
-                        {% if label == 1 %}
-                        <p id="labelImage" class="custom-field" style="text-align: center; font-size: 40px; color:blue;">정상 두부입니다.</p>
+                        {% if label == 0 %}
+                        <p id="labelImage" class="custom-field" style="text-align: center; font-size: 40px; color:blue;">정상 균주입니다.</p>
                         {% else %}
-                        <p id="labelImage" class="custom-field" style="text-align: center; font-size: 40px; color:red;">불량 두부입니다.</p>
+                        <p id="labelImage" class="custom-field" style="text-align: center; font-size: 40px; color:red;">불량 균주입니다.</p>
                         {% endif %}
                         <p>&nbsp;</p>
                         <img id="uploadedImage" src="{{ path }}" alt="" class="img-rounded custom-img">
